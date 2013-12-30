@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E280F2C1871821900925900 /* VLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E280F2B1871821900925900 /* VLCKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		2E280F2F187185A000925900 /* VLCKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E280F2B1871821900925900 /* VLCKit.framework */; };
 		2E615B2F186DADB6006026C2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E615B2E186DADB6006026C2 /* Cocoa.framework */; };
 		2E615B39186DADB6006026C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E615B37186DADB6006026C2 /* InfoPlist.strings */; };
 		2E615B3B186DADB6006026C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E615B3A186DADB6006026C2 /* main.m */; };
@@ -30,7 +32,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2E280F2E1871856700925900 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2E280F2F187185A000925900 /* VLCKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2E280F2B1871821900925900 /* VLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VLCKit.framework; sourceTree = "<group>"; };
 		2E615B2B186DADB6006026C2 /* FM4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FM4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E615B2E186DADB6006026C2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2E615B31186DADB6006026C2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -57,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E280F2C1871821900925900 /* VLCKit.framework in Frameworks */,
 				2E615B2F186DADB6006026C2 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +112,7 @@
 		2E615B2D186DADB6006026C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E280F2B1871821900925900 /* VLCKit.framework */,
 				2E615B2E186DADB6006026C2 /* Cocoa.framework */,
 				2E615B4D186DADB6006026C2 /* XCTest.framework */,
 				2E615B30186DADB6006026C2 /* Other Frameworks */,
@@ -164,6 +182,7 @@
 				2E615B27186DADB6006026C2 /* Sources */,
 				2E615B28186DADB6006026C2 /* Frameworks */,
 				2E615B29186DADB6006026C2 /* Resources */,
+				2E280F2E1871856700925900 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -384,6 +403,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/kitto/Code/FM4,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FM4/FM4-Prefix.pch";
 				INFOPLIST_FILE = "FM4/FM4-Info.plist";
@@ -397,6 +420,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/kitto/Code/FM4,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FM4/FM4-Prefix.pch";
 				INFOPLIST_FILE = "FM4/FM4-Info.plist";
@@ -464,6 +491,7 @@
 				2E615B5E186DADB6006026C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E615B5F186DADB6006026C2 /* Build configuration list for PBXNativeTarget "FM4Tests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +500,7 @@
 				2E615B61186DADB6006026C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

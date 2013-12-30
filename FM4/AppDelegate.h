@@ -3,13 +3,20 @@
 //  FM4
 //
 //  Created by Christoph Lupprich on 27/12/13.
-//  Copyright (c) 2013 Carbonative. All rights reserved.
+//  Copyright (c) 2013 Christoph Lupprich. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
+#import <VLCKit/VLCKit.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+  IBOutlet NSMenu *statusMenu;
+  IBOutlet NSMenuItem *startStopMenuItem;
+  NSStatusItem *statusItem;
+  VLCMediaPlayer *player;
+  BOOL playing;
+}
 
-@property (assign) IBOutlet NSWindow *window;
+- (IBAction)doStartOrStop:(id)sender;
 
 @end

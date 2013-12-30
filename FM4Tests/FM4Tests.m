@@ -3,7 +3,7 @@
 //  FM4Tests
 //
 //  Created by Christoph Lupprich on 27/12/13.
-//  Copyright (c) 2013 Carbonative. All rights reserved.
+//  Copyright (c) 2013 Christoph Lupprich. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
