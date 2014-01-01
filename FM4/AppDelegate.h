@@ -18,5 +18,7 @@
 }
 
 - (IBAction)doStartOrStop:(id)sender;
+- (IBAction)quitApplication:(id)sender;
+- (IBAction)showInfo:(id)sender;
 
 @end

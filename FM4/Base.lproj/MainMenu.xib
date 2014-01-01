@@ -655,17 +655,24 @@
         <customObject id="420" customClass="NSFontManager"/>
         <menu id="P6i-Cc-BLH">
             <items>
-                <menuItem title="Start..." id="MjY-5x-nNR">
+                <menuItem title="Start Stream" id="MjY-5x-nNR">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="doStartOrStop:" target="-1" id="k26-3O-5z9"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Info" id="RR8-Fs-AJW">
+                <menuItem isSeparatorItem="YES" id="ElJ-aw-eaI"/>
+                <menuItem title="About FM4 Stream" id="RR8-Fs-AJW">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showInfo:" target="-1" id="y2L-RZ-0aM"/>
+                    </connections>
                 </menuItem>
-                <menuItem title="Quit" id="ZYL-kh-27R">
+                <menuItem title="Quit FM4 Stream" id="ZYL-kh-27R">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitApplication:" target="-1" id="fwG-Un-THt"/>
+                    </connections>
                 </menuItem>
             </items>
         </menu>

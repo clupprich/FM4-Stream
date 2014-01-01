@@ -6,6 +6,10 @@
       "filename" : "StatusBarIcon.png"
     },
     {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
       "idiom" : "mac",
       "scale" : "1x",
       "filename" : "StatusBarIcon-2.png"

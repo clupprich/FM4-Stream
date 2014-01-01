@@ -25,13 +25,24 @@
   if (playing)
   {
     [self stopStream];
-    [startStopMenuItem setTitle:@"Start"];
+    [startStopMenuItem setTitle:@"Start Stream"];
   }
   else
   {
     [self startStream];
-    [startStopMenuItem setTitle:@"Stop"];
+    [startStopMenuItem setTitle:@"Stop Stream"];
   }
+}
+
+- (IBAction)quitApplication:(id)sender
+{
+  [self stopStream];
+  [NSApp terminate: nil];
+}
+
+- (IBAction)showInfo:(id)sender
+{
+  [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://christoph.luppri.ch"]];
 }
 
 - (void)startStream
