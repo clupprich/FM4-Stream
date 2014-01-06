@@ -12,11 +12,12 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-  NSImage *image = [NSImage imageNamed:@"StatusBarIcon"];
+  inactiveStatusBarImage = [NSImage imageNamed:@"StatusBarIconInactive"];
+  activeStatusBarImage = [NSImage imageNamed:@"StatusBarIcon"];
+  
   statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
   [statusItem setMenu:statusMenu];
-  //[statusItem setTitle:@"FM4"];
-  [statusItem setImage:image];
+  [statusItem setImage:inactiveStatusBarImage];
   [statusItem setHighlightMode:YES];
 }
 
@@ -26,11 +27,13 @@
   {
     [self stopStream];
     [startStopMenuItem setTitle:@"Start Stream"];
+    [statusItem setImage:inactiveStatusBarImage];
   }
   else
   {
     [self startStream];
     [startStopMenuItem setTitle:@"Stop Stream"];
+    [statusItem setImage:activeStatusBarImage];
   }
 }
 

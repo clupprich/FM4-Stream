@@ -15,6 +15,9 @@
   NSStatusItem *statusItem;
   VLCMediaPlayer *player;
   BOOL playing;
+  
+  NSImage *activeStatusBarImage;
+  NSImage *inactiveStatusBarImage;
 }
 
 - (IBAction)doStartOrStop:(id)sender;
